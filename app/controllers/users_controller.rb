@@ -1,19 +1,21 @@
 class UsersController < ApplicationController
   include UsersHelper
+  include RspotifyHelper
 
   def index
-    @user = session[:current_user]
   end
 
-  def spotify
-    session[:current_user] = RSpotify::User.new(request.env['omniauth.auth'])
-    current_user = User.merge(username: session[:current_user].id, email: session[:current_user].email)
-    save_artists session[:current_user], current_user
+  def sync_profile
+    current_spotify_user = instantiate_spotify_user(request.env['omniauth.auth'])
+    current_database_user = save_users(current_spotify_user)
+    save_artists(current_spotify_user, current_database_user)
+    session[:user_id] = current_database_user.id
     redirect_to '/artists/match'
   end
 
   def destroy
-    session[:current_user] = nil
+    session[:user_id] = nil
+    flash[:notice] = 'Signed out from Grape successully. Please note you are still signed in to Spotify.'
     redirect_to '/users/index'
   end
 end

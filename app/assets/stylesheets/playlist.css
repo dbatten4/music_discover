@@ -1,0 +1,152 @@
+/*playlist*/
+
+img {
+  border-radius: 50%;
+}
+
+#table {
+  max-width: 100%;
+}
+
+.playlist_area {
+  opacity: 0;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.panel {
+  margin-top: 0px !important;
+}
+
+.playlist_header {
+  opacity: 0;
+  width: 70%;
+  height: 34px;
+  margin-bottom: -10px;
+  margin-left: 15%;
+}
+
+.playlist_header_column {
+  display: inline-block;
+}
+
+#title_header {
+  width: 44.2%;
+  padding-left: 15px;
+}
+
+#artist_header {
+  width: 33%;
+  padding-left: 2px;
+}
+
+.playlist_item {
+  display: inline-block;
+}
+
+#playlist_title {
+  width: 44.1%;
+}
+
+#playlist_artist {
+  width: 34.3%;
+}
+
+#playlist_genre {
+  width: 21%;
+}
+
+#saved_position {
+  position: absolute;
+  padding: 3px 20px;
+  margin-left: -30px;
+  margin-top: 28px;
+  font-size: 16px;
+}
+
+.save_track_link {
+  position: absolute;
+  background-color: #2ebd59;
+  color: #fff;
+  border-radius: 20px;
+  text-align: center;
+  padding: 3px 20px;
+  margin-left: 20px;
+  margin-top: 28px;
+}
+
+.save_track_link:hover {
+  background-color: #4fd477;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.preview_and_save_track_box {
+  display: inline-block;
+  width: 43.9%;
+}
+
+.follow_artist {
+  display: inline-block;
+  margin-bottom: -4px;
+  width: 34%;
+}
+
+#artist_page_link {
+  position: absolute;
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 33px;
+}
+
+#artist_page_link:hover {
+  color: #808080;
+}
+
+/*recommended user*/
+
+#recom_user_box {
+  margin-top: 118px;
+  text-align: center;
+  font-size: 132%;
+}
+
+#recom_user_img {
+  margin-top: 10px;
+  margin-right: 0%;
+}
+
+.recom_user {
+  position: relative;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#follow_button {
+  margin-top: 12px;
+  margin-left: 6.2%;
+}
+
+/*carousel */
+
+.carousel-control {
+  bottom: 50%;
+}
+
+.carousel-control.left, .carousel-control.right {
+  background-image: none !important;
+}
+
+.glyphicon-chevron-left, .glyphicon-chevron-right {
+  color: #8944CA !important;
+}
+
+.carousel-control {
+  background-color: #FFFFFF;
+}
