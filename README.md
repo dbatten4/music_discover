@@ -42,8 +42,10 @@ This will take you to a new page where your Client ID and Client Secret are disp
 recommend storing them in your environment variables. 
 To do this run `open ~/.bash_profile` in the command line and add the following lines to your bash profile:
 
- `export SPOTIFY_SECRET=<YOUR_CLIENT_SECRET>`
- `export SPOTIFY_ID=<YOUR_CLIENT_ID>`
+ ```
+ export SPOTIFY_SECRET=<YOUR_CLIENT_SECRET>
+ export SPOTIFY_ID=<YOUR_CLIENT_ID>
+ ```
  
  In the Spotify Developer panel, add a redirect URI of `http://localhost:3000/auth/spotify/callback`. Then save and close.
 
